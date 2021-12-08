@@ -1,0 +1,20 @@
+.MyCard {
+    border-radius: 5px;
+    background-color: rgb(253, 250, 246);
+    width: 300px;
+    margin: 20px;
+    align-items: center;
+    display: block;
+    justify-content: center;
+    padding: 20px;
+}
+.InputElement {
+    width: 250px;
+    margin-top: 10px;
+}
+
+.MyIcon {
+    left: 80%;
+    position: relative;
+    top: -10px;
+}

@@ -1,0 +1,129 @@
+.Main {
+    overflow-x: hidden;
+    display: grid;
+    background-color: #757374;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    text-align: center;
+    }
+
+.Leaf {
+    height: 70%;
+    width: 50%;
+    position: absolute;
+}
+#First {
+    left: 10px;
+    top: 8px;
+    height: 200px;
+    width: 250px;
+}
+
+.Photo {
+    object-fit: cover;
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    position: absolute;
+    margin: 95px 0px -54px calc((100% - 980px) * 0.5);
+    left: 33px;
+    grid-area: 1 / 1 / 4 / 2;
+    justify-self: start;
+    align-self: start;
+}
+.Resume {
+	background-color: #185ADB;
+	width: 130px;
+	height: 130px;
+    border-radius: 50%;
+    position: relative;
+    margin: 20px 0px 38px calc((100% - 980px) * 0.5); 
+    left: 395px;
+    top: 80px;
+    grid-area: 2 / 1 / 3 / 2;
+    justify-self: start;
+    align-self: start;
+    cursor: pointer;
+}
+.Resume:hover,
+.Resume:active {
+    background-color: #040b3b;
+}
+
+.Portfolio {
+    background-color: #9D84B7;
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	align-items: center;
+    position: relative;
+    margin: 20px 0px 38px calc((100% - 980px) * 0.5);
+    left: 535px;
+    grid-area: 2 / 1 / 3 / 2;
+    justify-self: start;
+    align-self: start;
+    cursor: pointer;
+    top: 80px;
+}
+.Portfolio:hover,
+.Portfolio:active {
+    background-color: #040b3b;
+}
+.Skills {
+	width: 130px;
+	height: 130px;
+	background-color: #1C7947;
+	border-radius: 50%;
+	align-items: center;
+    position: relative;
+    margin: 20px 0px 38px calc((100% - 980px) * 0.5);
+    left: 675px;
+    grid-area: 2 / 1 / 3 / 2;
+    justify-self: start;
+    align-self: start;
+    cursor: pointer;
+    top: 80px;
+}
+.Skills:hover,
+.Skills:active {
+    background-color: #040b3b;
+}
+.Main h1 {
+    position: relative;
+    left: 100px;
+    top: 70px;
+}
+.Main p {
+    left: 100px;
+    top: -300px;
+    position: relative;
+}
+h3 {
+    position: relative;
+    z-index: 1;
+    font-family: cursive;
+    color: #cfcdcd;
+}
+
+.Main span {
+    width: 100px;
+    height: 1px;
+    background-color: #FACE7F;
+    animation: lineMove 3s linear 1; 
+    margin-left: -50px;
+    margin-top: -5%;
+    z-index: 1;
+    position: absolute;
+}
+@keyframes lineMove {
+    from {
+        width:0px;
+    }
+    to{
+        width:100px;
+    }
+}

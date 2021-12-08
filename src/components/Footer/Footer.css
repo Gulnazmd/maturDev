@@ -1,0 +1,55 @@
+.Footer {
+    background-color: white;
+    align-items: center;
+    border-bottom: 2px solid #f2f0f3;
+    position: static;
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+}
+.Icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+}
+
+.Inst {
+    width: 40px;
+    height: 40px;
+   
+}
+.Instagram {
+    position: relative;
+    margin: 51px 10px 41px calc((100% - 980px) * 0.5);
+    left: 124px;
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: start;
+    align-self: start;
+}
+.Twitter {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin: 51px 0px -21px calc((100% - 980px) * 0.5);
+    left: 279px;
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: start;
+    align-self: start;
+}
+.Facebook {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin: 51px 0px -21px calc((100% - 980px) * 0.5);
+    left: 505px;
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: start;
+    align-self: start;
+}
+.Icon {
+    text-align: center;
+}
+

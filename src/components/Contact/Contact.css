@@ -1,0 +1,21 @@
+.Input {
+    width: 100%;
+    height: 350px;
+    overflow-x: hidden;
+    display: grid;
+    background-color: #757374;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.InputBox {
+    display: block;
+    width: 400px;
+    height: 200px;
+    background-color: #1C7947;
+    padding: 20px;
+}
+
+
+
