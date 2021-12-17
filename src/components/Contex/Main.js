@@ -1,6 +1,6 @@
 import React from 'react';
 import './Main.css';
-
+import { Link } from 'react-router-dom';
 import MyPhoto from '../../images/myPhoto.jpg';
 
 const Main = (props) => (
@@ -11,11 +11,11 @@ const Main = (props) => (
                     <h1>Hello! I'm Gulnaz</h1>
                     <p>React/Frontend developer</p>
                     <div className="Resume">
-                        <h3>Resume</h3>
+                        <Link to='/about'><h3>Resume</h3></Link>
                         <span></span>
                     </div>
                     <div className="Portfolio">
-                        <h3>Portfolio</h3>
+                    <Link to='/portfolio'><h3>Portfolio</h3></Link>
                         <span></span>
                     </div>
                     <div className="Skills">

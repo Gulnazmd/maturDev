@@ -1,6 +1,6 @@
 import React from 'react';
 import './Card.css';
-import Button from '@material-ui/core/Button';
+import Button from '../UI/Button/Button';
 import IconButton from '@material-ui/core/IconButton';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import Visibility from '@material-ui/icons/Visibility';
@@ -10,6 +10,7 @@ import TextField from '@material-ui/core/TextField';
 const Card = (props) => {
     
     return(
+        <div className="CardDiv">
             <div className='MyCard'>       
                     <TextField className="InputElement" 
                         id="email" required
@@ -27,13 +28,11 @@ const Card = (props) => {
                               </IconButton>
                             </InputAdornment>
                             {props.children}
-                    <div> 
-                        <br/>
-                        <Button onClick={props.signUp} variant="contained" color="primary">
+                        <Button onClick={props.signUp}>
                             Sign In
                         </Button>
-                    </div>
             </div>
+        </div>
     )
     
 }

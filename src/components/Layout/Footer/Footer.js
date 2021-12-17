@@ -1,10 +1,10 @@
 import React from 'react';
 import './Footer.css';
-import Instagram from '../../images/instagram.svg';
-import Twitter from '../../images/tw-3.svg';
-import Facebook from '../../images/fb.svg';
+import Instagram from '../../../images/instagram.svg';
+import Twitter from '../../../images/tw-3.svg';
+import Facebook from '../../../images/fb.svg';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
-import Aux from './../../hoc/_Aux';
+import Aux from '../../../hoc/_Aux';
 
 const Footer = (props) => (
     <Aux>

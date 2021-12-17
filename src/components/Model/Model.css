@@ -1,0 +1,15 @@
+.ModelInfo {
+    padding: 16px;
+    text-align: center;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 3px #ccc;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.Model {
+    max-width: 47.98%;
+    width: 500px;
+    height: 300px;
+    padding: 50px;
+}

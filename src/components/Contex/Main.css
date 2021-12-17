@@ -1,7 +1,7 @@
 .Main {
     overflow-x: hidden;
     display: grid;
-    background-color: #757374;
+    background-color: #F8F5F1;
     min-height: 100vh;
     flex-direction: column;
     align-items: center;
@@ -10,18 +10,6 @@
     color: white;
     text-align: center;
     }
-
-.Leaf {
-    height: 70%;
-    width: 50%;
-    position: absolute;
-}
-#First {
-    left: 10px;
-    top: 8px;
-    height: 200px;
-    width: 250px;
-}
 
 .Photo {
     object-fit: cover;
@@ -36,7 +24,7 @@
     align-self: start;
 }
 .Resume {
-	background-color: #185ADB;
+	background-color: #F8A488;
 	width: 130px;
 	height: 130px;
     border-radius: 50%;
@@ -51,11 +39,11 @@
 }
 .Resume:hover,
 .Resume:active {
-    background-color: #040b3b;
+    background-color: #ff8d67;
 }
 
 .Portfolio {
-    background-color: #9D84B7;
+    background-color: #5AA897;
 	width: 130px;
 	height: 130px;
 	border-radius: 50%;
@@ -71,12 +59,12 @@
 }
 .Portfolio:hover,
 .Portfolio:active {
-    background-color: #040b3b;
+    background-color: #1c7965;
 }
 .Skills {
 	width: 130px;
 	height: 130px;
-	background-color: #1C7947;
+	background-color: #45526C;
 	border-radius: 50%;
 	align-items: center;
     position: relative;
@@ -90,17 +78,19 @@
 }
 .Skills:hover,
 .Skills:active {
-    background-color: #040b3b;
+    background-color: #223a6b;
 }
 .Main h1 {
     position: relative;
     left: 100px;
     top: 70px;
+    color: #9D9D9D;
 }
 .Main p {
     left: 100px;
     top: -300px;
     position: relative;
+    color: #9D9D9D;
 }
 h3 {
     position: relative;
@@ -108,7 +98,9 @@ h3 {
     font-family: cursive;
     color: #cfcdcd;
 }
-
+a {
+    text-decoration: none;
+}
 .Main span {
     width: 100px;
     height: 1px;
@@ -125,5 +117,34 @@ h3 {
     }
     to{
         width:100px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .Main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Photo {
+        height: 250px;
+        width: 250px;
+        margin: auto;
+        margin-left: 10%;
+        margin-top: -20px;
+    }
+    .Resume {
+        margin: auto;
+        left: auto;
+    }
+    .Portfolio {
+        margin: auto;
+        left: auto;
+    }
+    .Skills {
+        margin: auto;
+        left: auto;
+    }
+    .Main h1 {
+        margin-top: 100px;
     }
 }

@@ -1,0 +1,15 @@
+.MyPortfolio {
+    overflow-x: hidden;
+    display: flex;
+    background-color: #F8F5F1;
+    min-height: 100vh;
+    font-size: calc(6px + 2vmin);
+    color: #F8A488;
+    text-align: center;
+    width: 100%;
+}
+@media screen and (max-width: 700px) {
+    .MyPortfolio {
+        display: block;
+    }
+}

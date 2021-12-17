@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
-import './Builder.css';
-import Modal from './../../components/UI/Modal/Modal';
+import './BlogBuilder.css';
 import Aux from '../../hoc/_Aux';
+import NewPost from '../../components/CreatePost/NewPost';
+import Blog from '../BlogBuilder/Blog/Blog';
 
 
 class DataForm extends Component {
@@ -42,16 +43,8 @@ class DataForm extends Component {
        
         return(
             <Aux>
-                    <Modal open={this.state.card} cardOpened={this.closedHandler}>
-                        <div className="DataForm">
-                        <Card
-                            show={this.state.showCard}s
-                            cardOpened={this.closedHandler}
-                            showPassword={this.state.showPassword}
-                            onClick={this.handleClickShowPassword}
-                            signUp={this.signUpHandler}/>
-                        </div>
-                    </Modal>
+                    <Blog/>
+                    <NewPost/>
             </Aux>
         );
 

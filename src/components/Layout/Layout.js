@@ -1,7 +1,7 @@
 import React from 'react';
 import Aux from '../../hoc/_Aux';
-import Footer from '../Footer/Footer';
-import Header from '../Hearder/Hearder';
+import Footer from '../Layout/Footer/Footer';
+import Header from '../Layout/Hearder/Hearder';
 import classes from './Layout.css';
 
 const layout = ( props ) => (

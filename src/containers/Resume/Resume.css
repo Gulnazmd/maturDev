@@ -1,0 +1,23 @@
+.MyResume {
+    overflow-x: hidden;
+    display: grid;
+    background-color: #F8F5F1;
+    min-height: 100vh;
+    font-size: calc(10px + 2vmin);
+    color: #F8A488;
+    text-align: center;
+    }
+section {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.MyResume h1 {
+    margin-top: 120px;
+}
+.ResumePhoto {
+    width: 500px;
+    height: 300px;
+    border-radius: 5px;
+    max-width: 47.98%;
+}

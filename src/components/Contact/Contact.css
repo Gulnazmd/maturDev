@@ -3,19 +3,50 @@
     height: 350px;
     overflow-x: hidden;
     display: grid;
-    background-color: #757374;
+    background-color: #F8F5F1;
     min-height: 100vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 50px;
 }
 .InputBox {
-    display: block;
-    width: 400px;
-    height: 200px;
-    background-color: #1C7947;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 240px;
+    background-color: #5AA897;
     padding: 20px;
+    border-radius: 5px;
 }
+.InputDiv {
+    position: absolute;
+    left: 100px;
+    top: 160px;
+    padding: 30px;
+    color: #F8A488;
+}
+@media screen and (max-width: 700px) {
+    .Input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .InputDiv {
+        top: 50px;
+        left: auto;
+    }
+    .Input Button {
+        left: 20%;
+        margin-top: auto;
+    }
+}
+.Input Button {
+    position: relative;
+    left: 40%;
+    margin-top: -170px;
+}
+
 
 
 
