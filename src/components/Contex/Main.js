@@ -5,7 +5,6 @@ import MyPhoto from '../../images/myPhoto.jpg';
 
 const Main = (props) => (
 
-       
         <div className="Main">
         <img className="Photo" src={MyPhoto} alt="альтернативный текст"/>
                     <h1>Hello! I'm Gulnaz</h1>

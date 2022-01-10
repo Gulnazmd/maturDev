@@ -17,7 +17,7 @@ const Footer = (props) => (
                     
     </div>
     <div className="Icon">
-                        <small> © Made with <FavoriteBorderIcon/> by Gulnaz </small>
+                        <small> © Copyright Gulnaz <FavoriteBorderIcon/>  </small>
     </div>
     </Aux>
 )

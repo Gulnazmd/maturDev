@@ -3,7 +3,7 @@
     margin-top: 45px;
 }
 .Post-preview {
-    padding: 10px 16px;
+    padding: 10px 26px;
     margin: 20px 0;
     border-bottom: 1px solid #fafafa;
 }
@@ -12,4 +12,7 @@
 }
 .Post-preview h2 {
     color: #F8A488;
+}
+.SmallDiv {
+    color: #9D9D9D;
 }

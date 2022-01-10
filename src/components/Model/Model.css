@@ -9,7 +9,12 @@
 
 .Model {
     max-width: 47.98%;
-    width: 500px;
-    height: 300px;
     padding: 50px;
+}
+.ModelInfo h3 {
+    color: #F8A488;;
+}
+.ModelInfo p {
+    color: rgb(32, 32, 32);
+    margin: 1rem 0;
 }

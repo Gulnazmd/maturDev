@@ -6,7 +6,7 @@ const Header = (props) => (
     <div className="Header">
        <ul>
            <li><Link to="/">MaturDev</Link></li>
-           <li><Link to="/blog">Blog</Link></li>
+           <li><Link to="/blogs">Blog</Link></li>
            <li><Link to="/contact">Contact</Link></li>
        </ul>
        <p className='Sign'>

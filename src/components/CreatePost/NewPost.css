@@ -1,9 +1,23 @@
+.NewPostDiv {
+    width: 100%;
+    height: 350px;
+    overflow-x: hidden;
+    display: block;
+    background-color: #F8F5F1;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+
 .NewPost {
-    width: 50%;
     margin: 20px auto;
     border: 1px solid #eee;
     box-shadow: 0 2px 3px #ccc;
     text-align: center;
+    width: 60%;
+    background-color: white;
+}
+.NewPost h1 {
+    color: #cfcdcd;
 }
 
 .NewPost label {

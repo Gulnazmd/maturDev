@@ -47,6 +47,7 @@ class Resume extends Component {
                                     <li>React</li>
                                     <li>JavaScript</li>
                                     <li>CSS/SCSS</li>
+                                    <li>Material UI</li>
                                 </ul>
                             </Skills>
                     </section>
@@ -55,8 +56,7 @@ class Resume extends Component {
                         
                             <Model>
                                 <h3>My job</h3>
-                                <p>React
-                                </p>
+                                <p>React</p>
                             </Model>
                             <div>
                                 <img className="ResumePhoto" src={Nature} alt="альтернативный текст"/>

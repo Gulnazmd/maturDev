@@ -1,21 +1,24 @@
-import Button from '../UI/Button/Button';
+
 import React from "react";
 import './Post.css';
+import { Link } from 'react-router-dom';
 
-const Post = ({ blogs, handleDelete }) => {
-
+const Post = ({ blogs, title }) => {
     
     return (
         <div className='PostDiv'>
-                {blogs.map((blog) => (
-                    <div className='Post-preview' key={blog.id}>
+            <h2>{title}</h2>
+            {blogs.map((blog) => (
+                <div className='Post-preview' key={blog.id}>
+                    <Link to={`/blogs/${blog.id}`}>
                         <h2>{blog.title}</h2>
+                        <small className="SmallDiv">{blog.likes} likes</small>
                         <p>{blog.body}</p>
-                        <p>Written by {blog.author}</p>
-                        <Button clicked={() => handleDelete(blog.id)}>Delete</Button>
-                    </div>
-                ))}
-            </div>
+                        <p className="SmallDiv">Written by {blog.author}</p>
+                    </Link>
+                </div>
+            ))}
+        </div>
     );
 }
 
