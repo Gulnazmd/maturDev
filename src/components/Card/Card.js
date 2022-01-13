@@ -28,10 +28,9 @@ const Card = (props) => {
                               </IconButton>
                             </InputAdornment>
                             {props.children}
-                        <Button clicked={props.signUp}>
-                            Sign In
-                        </Button>
+                        
             </div>
+            <Button clicked={props.signUp}>Sign In</Button>
         </div>
     )
     

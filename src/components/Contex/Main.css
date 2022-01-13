@@ -124,27 +124,36 @@ a {
         display: flex;
         align-items: center;
         justify-content: center;
+        min-height: none;
     }
     .Photo {
-        height: 250px;
-        width: 250px;
-        margin: auto;
-        margin-left: 10%;
-        margin-top: -20px;
+        height: 200px;
+        width: 200px;
+        margin-left: 2%;
+        margin-top: -10px;
     }
     .Resume {
         margin: auto;
         left: auto;
+        height: 100px;
+        top: 1px;
+        left: 25%;
     }
     .Portfolio {
         margin: auto;
         left: auto;
+        height: 100px;
+        top: 1px;
+        left: 25%;
     }
     .Skills {
         margin: auto;
         left: auto;
+        height: 100px;
+        top: 1px;
+        left: 25%;
     }
     .Main h1 {
-        margin-top: 100px;
+        left: 10px;
     }
 }

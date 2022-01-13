@@ -10,7 +10,7 @@
 section {
     display: flex;
     justify-content: space-around;
-    align-items: baseline;
+    align-items: center;
 }
 .MyResume h1 {
     margin-top: 120px;
@@ -20,4 +20,12 @@ section {
     height: 300px;
     border-radius: 5px;
     max-width: 47.98%;
+}
+@media screen and (max-width: 700px) {
+    section {
+        display: inline-block;
+    }
+    .ResumePhoto {
+        max-width: 70%;
+    }
 }

@@ -3,15 +3,18 @@ import './PortfolioBuilder.css';
 import Aux from '../../hoc/_Aux';
 import Portfolio from '../../components/Portfolio/Portfolio';
 import Site from '../../images/site.png';
-import Bird from '../../images/bird.png';
+import Drop from '../../images/flags.png';
 import Data from '../../images/data.png';
+import MyAxios from '../../images/axios.png';
+import Mysite from '../../images/sitepage.jpg';
+import Moon from '../../images/moon.png';
 
 
 class PortfolioBuilder extends Component {
 
     constructor(props) {
         super(props)
-            
+
         this.state = {
             loading: false,
             login: false,
@@ -19,8 +22,8 @@ class PortfolioBuilder extends Component {
             showPassword: false,
             card: false,
         }
-   
-        
+
+
     }
 
     signUpHandler = () => {
@@ -42,24 +45,39 @@ class PortfolioBuilder extends Component {
     }
 
     render() {
-       
+
         return(
             <Aux>
                 <div className='MyPortfolio'>
                     <Portfolio>
-                        <div><img src={Bird} alt='' style={{width: '90%', height: '250px', padding: '10px', marginTop: '20px'}}/></div>
-                        <h3>React Project Rocket</h3>
-                        <p>Microsoft Project — программа управления проектами, разработанная и продаваемая корпорацией Microsoft. </p>
+                        <div><img src={Drop} alt='' style={{width: '90%', height: '250px', padding: '10px', marginTop: '20px'}}/></div>
+                        <h3>JS Project</h3>
+                        <p>Drag and drop quiz with appear animation. JavaScript</p>
                     </Portfolio>
                     <Portfolio>
                         <div><img src={Data} alt='' style={{width: '328px', height: '250px', padding: '10px', marginTop: '20px'}}/></div>
-                        <h3>React Project Rocket</h3>
-                        <p>Microsoft Project — программа управления проектами, разработанная и продаваемая корпорацией Microsoft. </p>
+                        <h3>React Project</h3>
+                        <p>Data Forms. Material UI. </p>
                     </Portfolio>
                     <Portfolio>
                         <div><img src={Site} alt='' style={{width: '328px', height: '250px', padding: '10px', marginTop: '20px'}}/></div>
-                        <h3>React Project Rocket</h3>
-                        <p>Microsoft Project — программа управления проектами, разработанная и продаваемая корпорацией Microsoft. </p>
+                        <h3>JS Project</h3>
+                        <p>Drag and drop test.</p>
+                    </Portfolio>
+                    <Portfolio>
+                        <div><img src={MyAxios} alt='' style={{width: '328px', height: '250px', padding: '10px', marginTop: '20px'}}/></div>
+                        <h3>React project</h3>
+                        <p>Create wish card. Route, axios, http requests. </p>
+                    </Portfolio>
+                    <Portfolio>
+                        <div><img src={Mysite} alt='' style={{width: '328px', height: '250px', padding: '10px', marginTop: '20px'}}/></div>
+                        <h3>React Project</h3>
+                        <p>Site’s main page. Material UI.</p>
+                    </Portfolio>
+                    <Portfolio>
+                        <div><img src={Moon} alt='' style={{width: '328px', height: '250px', padding: '10px', marginTop: '20px'}}/></div>
+                        <h3>React Project</h3>
+                        <p>Rocket. Components, Backdrop effect.</p>
                     </Portfolio>
                 </div>
             </Aux>

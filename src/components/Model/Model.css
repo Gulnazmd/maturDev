@@ -18,3 +18,8 @@
     color: rgb(32, 32, 32);
     margin: 1rem 0;
 }
+@media screen and (max-width: 700px) {
+    .Model {
+        max-width: 80%;
+    }
+}

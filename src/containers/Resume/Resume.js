@@ -10,7 +10,7 @@ class Resume extends Component {
 
     constructor(props) {
         super(props)
-            
+
         this.state = {
             loading: false,
             login: false,
@@ -18,7 +18,7 @@ class Resume extends Component {
             showPassword: false,
             card: false,
         }
-   
+
     }
 
     signUpHandler = () => {
@@ -26,7 +26,7 @@ class Resume extends Component {
     }
 
     render() {
-       
+
         return(
             <Aux>
                 <div className="MyResume">
@@ -35,8 +35,8 @@ class Resume extends Component {
                             <Model>
                                 <h3>About me</h3>
                                 <p>My name is Gulnaz.
-                                    I'm front-end developer based in Kazan. 
-                                    My specialization is creating interactive experiences 
+                                    I'm front-end developer based in Kazan.
+                                    My specialization is creating interactive experiences
                                     and functional interfaces using JavaScript, CSS, React,
                                     Canvas and Design Systems.
                                 </p>
@@ -48,12 +48,14 @@ class Resume extends Component {
                                     <li>JavaScript</li>
                                     <li>CSS/SCSS</li>
                                     <li>Material UI</li>
+                                    <li>SQL</li>
+                                    <li>Tailwind</li>
                                 </ul>
                             </Skills>
                     </section>
                     <h1>Work experience</h1>
                     <section>
-                        
+
                             <Model>
                                 <h3>My job</h3>
                                 <p>React</p>

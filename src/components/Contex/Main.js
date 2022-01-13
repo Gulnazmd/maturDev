@@ -2,9 +2,11 @@ import React from 'react';
 import './Main.css';
 import { Link } from 'react-router-dom';
 import MyPhoto from '../../images/myPhoto.jpg';
+import Aux from '../../hoc/_Aux';
+import ToDoForm from '../../containers/TodoForm/ToDoForm';
 
 const Main = (props) => (
-
+    <Aux>
         <div className="Main">
         <img className="Photo" src={MyPhoto} alt="альтернативный текст"/>
                     <h1>Hello! I'm Gulnaz</h1>
@@ -22,6 +24,8 @@ const Main = (props) => (
                         <span></span>
                     </div>
         </div>
+       <ToDoForm/>
+    </Aux>
 )
 
 export default Main;

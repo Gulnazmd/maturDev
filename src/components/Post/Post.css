@@ -16,3 +16,9 @@
 .SmallDiv {
     color: #9D9D9D;
 }
+@media screen and (max-width: 700px) {
+    .PostDiv {
+        width: 70%;
+        margin-top: 55px;
+    }
+}

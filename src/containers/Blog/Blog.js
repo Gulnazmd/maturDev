@@ -7,18 +7,17 @@ import Aux from '../../hoc/_Aux';
 import { Link } from 'react-router-dom';
 
 const Blog = () => {
-    
+
     const { data: blogs, isPending, error} = useFetch('http://localhost:8000/blogs');
-  
+
     return (
         <Aux>
             <div className='Blog'>
+                <Button><Link to='/new-post'>New Post</Link></Button>
                 { error && <div>{error}</div>}
                 { isPending && <div>Loading...</div>}
                 {blogs && <Post blogs={blogs}></Post>}
-                
-            </div> 
-            <Button><Link to='/new-post'>New Post</Link></Button>
+            </div>
         </Aux>
     )
 }

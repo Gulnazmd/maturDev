@@ -8,3 +8,19 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
 }
+.Blog Button {
+    position: absolute;
+    top: 70px;
+    right: 4%;
+}
+.Blog a {
+    color: #9D9D9D;
+}
+@media screen and (max-width: 700px) {
+    .Blog Button {
+        top: 110px;
+        right: 2%;
+        width: 80px;
+        position: fixed;
+    }
+}
