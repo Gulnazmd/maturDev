@@ -19,7 +19,10 @@
 .Inst {
     width: 40px;
     height: 40px;
-   
+}
+.GitHab {
+    width: 40px;
+    height: 40px;
 }
 .Instagram {
     position: relative;
@@ -39,7 +42,7 @@
     justify-self: start;
     align-self: start;
 }
-.Facebook {
+.Git {
     width: 40px;
     height: 40px;
     position: relative;

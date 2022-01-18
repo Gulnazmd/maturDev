@@ -27,11 +27,14 @@
     margin-right: 20px;
     cursor: pointer;
 }
-ul a {
+.Type a {
     position: relative;
     color: #9D9D9D;
     text-decoration: none;
     margin: 0 10px;
+}
+.MyMenu a {
+    color: #9D9D9D;
 }
 .Header a:hover,
 .Header a:active{
@@ -42,7 +45,7 @@ ul a {
     position: absolute;
     right: 50px;
     top: 4px;
-    cursor: pointer;  
+    cursor: pointer;
 }
 .Sign a {
     text-decoration: none;
