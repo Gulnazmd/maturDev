@@ -22,18 +22,23 @@ export default function Header (props) {
 
         return (
             <div className="Header">
-                <Box>
-                    <AppBar position="static"
+                <Box sx={{ flexGrow: 1 }}>
+                    <AppBar
+                        position="static"
+                        alignItems = 'flex-end'
                         color='grey'
                         elevation={0}>
-                        <Toolbar>
+                        <Toolbar >
+                        <Typography
+                                variant="h6"
+                                className='Type'><Link to="/">MaturDev</Link>
+                        </Typography>
                             <IconButton
                                 size="large"
-                                edge="start"
+                                edge="end"
                                 color="inherit"
                                 aria-label="menu"
                                 sx={{ mr: 2 }}>
-
                                     <MenuIcon onClick={handleMenu} />
                                      <Menu
                                     id="menu-appbar"
@@ -51,14 +56,11 @@ export default function Header (props) {
                                     onClose={handleClose}>
                                     <MenuItem className='MyMenu' onClick={handleClose}><Link to="/blogs">Blog</Link></MenuItem>
                                     <MenuItem className='MyMenu' onClick={handleClose}><Link to="/contact">Contact</Link></MenuItem>
+                                    <MenuItem className='MyMenu' onClick={handleClose}><Link opened={props.open} onClick={props.clicked} to="/dataform">Sign IN</Link></MenuItem>
                                 </Menu>
                             </IconButton>
-                            <Typography className='Type'><Link to="/">MaturDev</Link></Typography>
                         </Toolbar>
                     </AppBar>
                 </Box>
-                <p className='Sign'>
-                    <Link opened={props.open} onClick={props.clicked} to="/dataform">Sign IN</Link>
-                </p>
             </div>
         )}
