@@ -1,61 +1,49 @@
 .Header {
-    width: 100vw;
-    background-color: white;
-    align-items: center;
-    border-bottom: 2px solid #f2f0f3;
-    position: fixed;
-    z-index: 100;
+	width: 100vw;
+	background-color: white;
+	align-items: center;
+	border-bottom: 2px solid #f2f0f3;
+	position: fixed;
+	z-index: 100;
 }
-
 .Header ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: flex-end;
-    align-content: flex-end;
-    height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: flex-end;
+	align-content: flex-end;
+	height: 100%;
 }
 @media screen and (max-width: 800px) {
-    .Header ul {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .Type {
-        left: 100px;
-    }
+	.Header ul {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.Type {
+		left: 100px;
+	}
 }
 .Header li {
-    display: inline-block;
-    margin-right: 20px;
-    cursor: pointer;
+	display: inline-block;
+	margin-right: 20px;
+	cursor: pointer;
 }
 .Type a {
-    position: relative;
-    color: #9D9D9D;
-    text-decoration: none;
-    margin: 0 10px;
+	position: relative;
+	color: #9d9d9d;
+	text-decoration: none;
+	margin: 0 10px;
 }
-.MyMenu a {
-    color: #9D9D9D;
+.MyMenu {
+	color: #9d9d9d;
+    margin-right: 1em;
+    margin-left: 1em;
+    display: flex;
 }
-.Header a:hover,
-.Header a:active{
-    color: #5AA897;
-    font-family: Georgia, Times, 'Times New Roman', serif;
+.MyMenu:hover,
+.MyMenu:active {
+	color: #5aa897;
+	font-family: Georgia, Times, 'Times New Roman', serif;
 }
-.Sign {
-    position: absolute;
-    right: 50px;
-    top: 4px;
-    cursor: pointer;
-}
-.Sign a {
-    text-decoration: none;
-    color: #9D9D9D;
-}
-.Sign a:hover,
-.Sign a:active {
-    color: #5AA897;
-    font-family: Georgia, Times, 'Times New Roman', serif;
-}
+

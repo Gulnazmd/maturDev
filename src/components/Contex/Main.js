@@ -3,7 +3,7 @@ import './Main.css';
 import { Link } from 'react-router-dom';
 import MyPhoto from '../../images/myPhoto.jpg';
 import Aux from '../../hoc/_Aux';
-import ToDoForm from '../../containers/TodoForm/ToDoForm';
+import ToDoForm from '../../containers/Todo/ToDoForm';
 
 const Main = (props) => (
     <Aux>
