@@ -11,9 +11,10 @@ import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 
 function PostDetails() {
     const {id} = useParams();
-    const { data: blog, isPending, error} = useFetch('http://localhost:8000/blogs/' + id);
+    const { data: blog, isPending, error } = useFetch('http://localhost:8000/blogs/' + id);
+
     const [ likes, setLikes ] = useState(0);
-    
+
     const navigateTo = useNavigate();
 
     const handleDelete = () => {
@@ -33,7 +34,7 @@ function PostDetails() {
                      <h3>{blog.title}</h3>
                      <p>Written by {blog.author}</p>
                      <p>{blog.content}</p>
-                     <small className="Likes" 
+                     <small className="Likes"
                             onClick={() => setLikes(likes + 1)}> {blog.likes + likes} <FavoriteBorderIcon/> </small>
                      <Button clicked={handleDelete}>Delete</Button>
                 </Model>

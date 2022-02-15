@@ -25,13 +25,13 @@ export default function Header(props) {
 				<Toolbar>
 					<Typography variant='h6' className='Type'>
 						<Link to='/'>
-							<a>MaturDev</a>
+							<p>MaturDev</p>
 						</Link>
 					</Typography>
 					<Box sx={{ flexGrow: 1 }} />
                     <Box sx={{ display: {xs: 'none', md: 'flex' } }}>
 						<Link to='/blogs'>
-							<a className='MyMenu'>
+							<h4 className='MyMenu'>
 								<Typography
 									sx={{
 										display: {
@@ -43,11 +43,11 @@ export default function Header(props) {
 								>
 									Blog
 								</Typography>
-							</a>
+							</h4>
 						</Link>
 
 						<Link to='/contact'>
-							<a className='MyMenu'>
+							<h4 className='MyMenu'>
 								<Typography
 									sx={{
 										display: {
@@ -59,14 +59,14 @@ export default function Header(props) {
 								>
 									Contact
 								</Typography>
-							</a>
+							</h4>
 						</Link>
 						<Link
 							opened={props.open}
 							onClick={props.clicked}
 							to='/dataform'
 						>
-							<a className='MyMenu'>
+							<h4 className='MyMenu'>
 								{' '}
 								<Typography
 									sx={{
@@ -79,7 +79,7 @@ export default function Header(props) {
 								>
 									Sign IN
 								</Typography>
-							</a>
+							</h4>
 						</Link>
 					</Box>
 					<Box
